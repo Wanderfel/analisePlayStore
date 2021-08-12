@@ -1,0 +1,173 @@
+/* Montagem da área do logo do site */
+header {
+    background-image: linear-gradient(to left, #6f726d80, #51ecf7ea,#6f726d80);
+    height: 50px;
+    width: 100% !important;
+    margin-top: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Didot', serif;	
+}
+
+/* Logo do site */
+.topzera {
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Plano de fundo */
+body {
+    background-image: url(\img/tema4.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+/* Botões primario e secundário */
+#botao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Área das caixa dos selects */
+.opções {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div onde estão os selects */
+#seleção{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Os selects */
+select {
+    width: 120px;
+}
+
+/* A etiqueta dos slects */
+label {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+}
+
+/* Área do local dos graficos mais externa */
+.graficos{
+    font-size: large;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    margin: 8%;
+    color:black;
+    font-family: 'Didot', serif;
+    background-color: rgba(80, 87, 95, 0.233);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.199);
+}
+
+/* Div onde ficma os gráficos*/
+#local-grafico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Div do gráfico de barras */
+#grafico-bar {
+    margin-top:  0%!important;
+    margin-bottom: 20px;
+    background-color: rgb(238, 242, 247);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    width: 270px;
+    height: 150px;
+}
+
+/* Div dos gráficos de rosquinha */
+#grafico-doughnut{
+    width: 320px;
+    height: 200px;
+}
+
+/* Área o texto de apresentação do site */
+#sobre {
+    padding: 20px;
+    text-align: center;
+    color:black;
+    font-family: 'Didot', serif;
+}
+
+/* Resposividade do site */
+@media screen and (min-width: 450px){
+    #grafico-bar {
+        width: 350px;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (min-width: 500px){
+    #grafico-bar {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #grafico-bar {
+        width: 500px ;
+        height: 300px ;
+    }
+    
+}
+
+ @media screen and (min-width: 800px){
+    #grafico-bar {
+        width: 550px ;
+        height: 350px ;
+    }
+
+    label {
+        display: unset !important;
+    }
+    
+    #local-grafico {
+        flex-direction: row;
+    }
+
+    #titulo{
+        font-size: 30px;
+    }
+    
+    #sobre{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    #grafico-bar {
+        width: 650px ;
+        height: 400px ;
+    }
+    
+}
+
+@media screen and (min-width: 1100px){
+    #grafico-doughnut{
+        margin: 0px;
+        padding: 0px;
+        width: 500px;
+        height: 350px;
+    }
+    
+    
+}
